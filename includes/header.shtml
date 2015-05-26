@@ -1,0 +1,29 @@
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <h1>
+      <a href="/" class="logo">
+        <img src="/assets/images/logo.png" alt="Manjit Karve"><span>Manjit Karve</span>
+      </a>
+    </h1>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation" class="right">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/">Home</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Resume</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Portfolio</a></li>
+        <li class="nav-link more"><a href="javascript:void(0)">Articles</a>
+          <ul class="submenu">
+            <li><a href="javascript:void(0)">Work</a></li>
+            <li class="more"><a href="javascript:void(0)">Play</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Motorcycling</a></li>
+                <li><a href="javascript:void(0)">Fitness</a></li>
+                <li><a href="javascript:void(0)">Reading</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
