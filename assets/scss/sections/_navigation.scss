@@ -1,0 +1,56 @@
+header {
+    label.navigation-menu-button {
+        display: none;
+    }
+    @media only screen and (max-width: 767px) {
+        nav{
+            label.navigation-menu-button {
+                font-size: 1.1em;
+                display: inline-block;
+            }
+            .navigation-menu {
+                display: none;
+            }
+            #nav-trigger:checked+ul{
+                display: block;
+            }
+        }
+    }
+    nav{
+        &>ul{
+            @include display(flex);
+            @include justify-content(flex-start);
+            li{
+                position: relative;
+                &.nav-link{
+                    margin-right: 1em;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+                ul{
+                    display: none;
+                    background-color: $header-bg;
+                    position: absolute;
+                    z-index: 100;
+                    right: 0px;
+                    min-width: 8em;
+                    padding: 1em 0;
+                    ul{
+                        top: -1em;
+                        right: 100%;
+                    }
+                    li{
+                        padding: 0 1em;
+                    }
+
+                }
+                &:hover{
+                    &>ul{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

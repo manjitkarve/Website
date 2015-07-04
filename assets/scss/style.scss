@@ -1,21 +1,14 @@
+@import "common/swatches";
+@import "common/colors";
+@import "common/theme/current-theme";
+
 @import "overrides";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
 @import "font-awesome/font-awesome";
 
-@import "common/swatches";
-@import "common/colors";
-@import "common/theme/current-theme";
-@import "common/layout";
 
-body{
-    color: map-get($grey1-pal, x-dark);
-    div{
-        color: map-get($bgrey-pal, x-dark);
-        span{
-            color: map-get($primary, x-dark);
-        }
-    }
 
-}
+@import "controller";
+

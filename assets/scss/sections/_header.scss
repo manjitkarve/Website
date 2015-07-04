@@ -1,0 +1,82 @@
+@import "navigation";
+
+header{
+    background-color: $header-bg;
+    padding: 0 1em;
+    box-shadow: 0px 0px 2px 4px dark-pal($grey2);
+    @include flex-grow(0);
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(space-between);
+
+    h1{
+        margin: 0;
+        .logo{
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(space-between);
+            @media screen and (max-width: 767px) {
+                height: $heading-font-size*1.5;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                height: $heading-font-size*1.8;
+            }
+            @media screen and (min-width: 1024px) and (max-width: 1279px) {
+                height: $heading-font-size*1.8;
+            }
+            @media screen and (min-width: 1280px) and (max-width: 1679px) {
+                height: $heading-font-size*2;
+            }
+            @media screen and (min-width: 1680px) {
+                height: $heading-font-size*2;
+            }
+            span{
+                font-family: $heading-font-family;
+                font-weight: 900;
+                font-size: $heading-font-size;
+                color: base-pal($secondary);
+                @media screen and (max-width: 767px) {
+                    font-size: $heading-font-size*0.8;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    font-size: $heading-font-size*0.9;
+                }
+                @media screen and (min-width: 1024px) and (max-width: 1279px) {
+                    font-size: $heading-font-size*1;
+                }
+                @media screen and (min-width: 1280px) and (max-width: 1679px) {
+                    font-size: $heading-font-size*1.1;
+                }
+                @media screen and (min-width: 1680px) {
+                    font-size: $heading-font-size*1.2;
+                }
+            }
+            img{
+                vertical-align: top;
+
+                margin-right: 0.75rem;
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    width: $heading-font-size*1;
+                    padding-top: 0.2em;
+                }
+                @media screen and (min-width: 1024px) and (max-width: 1279px) {
+                    width: $heading-font-size*1;
+                    padding-top: 0.2em;
+                }
+                @media screen and (min-width: 1280px) and (max-width: 1679px) {
+                    width: $heading-font-size*1;
+                    padding-top: 0.2em;
+                }
+                @media screen and (min-width: 1680px) {
+                    width: $heading-font-size*1;
+                    padding-top: 0.2em;
+                }
+            }
+        }
+    }
+
+}

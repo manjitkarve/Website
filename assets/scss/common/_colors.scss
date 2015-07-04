@@ -4,6 +4,7 @@
     $count: 1;
     @each $tick in $ticks {
         $palette-map: map-merge($palette-map, (nth($keys, $count): map-get($color-palette, $tick)));
+        $count: $count+1;
     }
 
     @return $palette-map;
@@ -24,8 +25,5 @@
 @function xlight-pal($palette){
     @return map-get($palette, xlight);
 }
-
-$grey1-pal: createPalette();
-$bgrey-pal: createPalette($blue-grey-pal);
 
 

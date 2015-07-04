@@ -1,0 +1,68 @@
+main[page-name^="index"] {
+    .row {
+        @media screen and (min-width: 768px) {
+            @include display(flex);
+            @include flex-direction(row);
+            @include justify-content(space-between);
+        }
+
+
+
+        article{
+            &:last-child{
+                @media screen and (min-width: 768px) {
+                    margin-left: 2em;
+                }
+            }
+            p {
+                text-align: justify;
+            }
+            h2 {
+                color: xdark-pal($primary);
+                margin-bottom: 0.1em;
+                .fa {margin-right: 0.5em;}
+            }
+        }
+
+
+    }
+
+    .scorable{
+        position: relative;
+        &:after{
+            @extend .fa;
+            display: none;
+            position: absolute;
+            font-size: 0.4em;
+            top: -3px;
+            left: 0px;
+        }
+        &:hover:after, &.scoreOn:after{
+            display: block;
+        }
+        &[data-score="1"]{
+            color: map-get($red-pal, 900);
+            &:after {
+                content: "\f005\f006\f006\f006";
+            }
+        }
+        &[data-score="2"]{
+            color: map-get($indigo-pal, 500);
+            &:after {
+                content: "\f005\f005\f006\f006";
+            }
+        }
+        &[data-score="3"]{
+            color: map-get($teal-pal, 300);
+            &:after {
+                content: "\f005\f005\f005\f006";
+            }
+        }
+        &[data-score="4"]{
+            color: map-get($green-pal, 500);
+            &:after {
+                content: "\f005\f005\f005\f005";
+            }
+        }
+    }
+}

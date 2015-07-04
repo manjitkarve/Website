@@ -1,0 +1,25 @@
+main{
+    @include flex-grow(1);
+    @media screen and (max-width: $base-content-width - 1) {
+        width: 100%;
+    }
+    @media screen and (min-width: 960px) and (max-width: 1023px) {
+        width: $base-content-width;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        width: $base-content-width*1.05;
+    }
+    @media screen and (min-width: 1280px) and (max-width: 1679px) {
+        width: $base-content-width*1.1;
+    }
+    @media screen and (min-width: 1680px) {
+        width: $base-content-width*1.3;
+    }
+
+    margin: 0 auto;
+    padding: 1em;
+    background-color: transparentize(xlight-pal($grey1), 0.3);
+    position: relative;
+}
+
+@import "index/index";

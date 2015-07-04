@@ -14,7 +14,7 @@
 <div class="row">
 <article class="type-system-rounded coding article">
 	<h2><i class="fa fa-code animate"></i><span>Coding</span></h2>
-	<p>I like knowing the medium for which I'm designing. It started with <a href="javascript:void();" class="scorable" data-score="3">Java and JFC Swing</a>, and I've learnt to use various languages, preprocessors, libraries and platforms over the years: <a href="javascript:void();" class="scorable" data-score="4">HTML</a>, <a href="javascript:void();" class="scorable" data-score="4">CSS</a>, <a href="javascript:void();" class="scorable" data-score="4">Javascript</a>, <a href="javascript:void();" class="scorable" data-score="1">Perl</a>, <a href="javascript:void();" class="scorable" data-score="2">PHP</a>, <a href="javascript:void();" class="scorable" data-score="3">SCSS</a>, <a href="javascript:void();" class="scorable" data-score="4">jQuery</a>, <a href="javascript:void();" class="scorable" data-score="3">SCSS&nbsp;Frameworks</a>, <a href="javascript:void();" class="scorable" data-score="3">Sencha Touch</a> and even <a href="javascript:void();" class="scorable" data-score="1">ncurses</a> at one point. As with design, I love cracking challenging real world coding problems.</p>
+	<p>I like knowing the medium for which I'm designing. It started with <a href="javascript:jQuery.noop();" class="scorable" data-score="3">Java and JFC Swing</a>, and I've learnt to use various languages, preprocessors, libraries and platforms over the years: <a href="javascript:jQuery.noop();" class="scorable" data-score="4">HTML</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="4">CSS</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="4">Javascript</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="1">Perl</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="2">PHP</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="3">SCSS</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="4">jQuery</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="3">SCSS&nbsp;Frameworks</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="3">Sencha Touch</a> and even <a href="javascript:jQuery.noop();" class="scorable" data-score="1">ncurses</a> at one point. As with design, I love cracking challenging real world coding problems.</p>
 </article>
 <article class="type-system-rounded management article">
 	<h2><i class="fa fa-users animate"></i><span>Management</span></h2>
@@ -24,8 +24,8 @@
 
 <div class="row">
 <article class="type-system-rounded fitness article">
-	<h2><i class="fa fa-heartbeat animate"></i><span>Reading</span></h2>
-	<p>Over the last year and some, I've become something of a fitness enthusiast. I've dropped 14kgs (and counting) and am quite active. I jog, cycle, swim, weight train and play basketball regularly. I also frequently cycle to work. Insights I've gained along the way are in my <a href="javascript:void();">fitness related blog posts</a>.</p>
+	<h2><i class="fa fa-heartbeat animate"></i><span>Fitness</span></h2>
+	<p>Over the last year and some, I've become something of a fitness enthusiast. I've dropped 14kgs (and counting) and am quite active. I jog, cycle, swim, weight train and play basketball regularly. I also frequently cycle to work. Insights I've gained along the way are in my <a href="javascript:jQuery.noop();">fitness related blog posts</a>.</p>
 </article>
 
 <article class="type-system-rounded books article">
