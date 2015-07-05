@@ -3366,6 +3366,7 @@ header h1 .logo span {
   font-weight: 900;
   font-size: 1.7em;
   color: #e91e63;
+  text-shadow: #00838f 2px 2px;
 }
 @media screen and (max-width: 767px) {
   /* line 34, ../scss/sections/_header.scss */
@@ -3397,40 +3398,40 @@ header h1 .logo span {
     font-size: 2.04em;
   }
 }
-/* line 55, ../scss/sections/_header.scss */
+/* line 56, ../scss/sections/_header.scss */
 header h1 .logo img {
   vertical-align: top;
   margin-right: 0.75rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 55, ../scss/sections/_header.scss */
+  /* line 56, ../scss/sections/_header.scss */
   header h1 .logo img {
     display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 55, ../scss/sections/_header.scss */
+  /* line 56, ../scss/sections/_header.scss */
   header h1 .logo img {
     width: 1.7em;
     padding-top: 0.2em;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 55, ../scss/sections/_header.scss */
+  /* line 56, ../scss/sections/_header.scss */
   header h1 .logo img {
     width: 1.7em;
     padding-top: 0.2em;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1679px) {
-  /* line 55, ../scss/sections/_header.scss */
+  /* line 56, ../scss/sections/_header.scss */
   header h1 .logo img {
     width: 1.7em;
     padding-top: 0.2em;
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 55, ../scss/sections/_header.scss */
+  /* line 56, ../scss/sections/_header.scss */
   header h1 .logo img {
     width: 1.7em;
     padding-top: 0.2em;

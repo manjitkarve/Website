@@ -36,6 +36,7 @@ header{
                 font-weight: 900;
                 font-size: $heading-font-size;
                 color: base-pal($secondary);
+                text-shadow: dark-pal($primary) 2px 2px;
                 @media screen and (max-width: 767px) {
                     font-size: $heading-font-size*0.8;
                 }
