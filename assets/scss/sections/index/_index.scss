@@ -22,6 +22,21 @@ main[page-name^="index"] {
                 margin-bottom: 0.1em;
                 .fa {margin-right: 0.5em;}
             }
+            &.about{
+                ul, li{margin: 0; padding: 0}
+                li{
+                    display: inline-block;
+                    margin-right: 0.5em;
+                    &:after{
+                          content: '|';
+                          display: inline-block;
+                          margin-left: 0.7em;
+                    }
+                    &:last-child:after{
+                        display: none;
+                    }
+                }
+            }
         }
 
 

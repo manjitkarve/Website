@@ -1,9 +1,19 @@
 <div class="row">
 <article class="type-system-rounded about article">
 	<h2><i class="fa fa-user animate"></i><span>About</span></h2>
-	<p>
-	Hi! My name is Manjit Karve. I'm 38 years old, with over 14 years of experience in designing and developing UIs, managing UX projects and staffing and managing UX teams. 
-	</p>
+    <ul>
+        <li>UX Professional</li>
+        <li>Designer</li>
+        <li>Developer</li>
+        <li>Technologist</li>
+        <li>DIY Enthusiast</li>
+        <li>Biker</li>
+        <li>Cuber</li>
+        <li>Cyclist</li>
+        <li>Runner</li>
+        <li>Fitness Geek</li>
+        <li>SF &amp; Fantasy Buff</li>
+    </ul>
 </article>
 <article class="type-system-rounded design article">
 	<h2><i class="fa fa-magic animate"></i><span>Design</span></h2>
