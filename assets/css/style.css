@@ -3608,39 +3608,39 @@ footer {
   -ms-flex-pack: distribute;
   background-color: #263238;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 499px) {
   /* line 1, ../scss/sections/_footer.scss */
   footer {
-    flex-basis: 3.23em;
+    flex-basis: 4.25em;
     font-size: 1.02em;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 500px) and (max-width: 1023px) {
   /* line 1, ../scss/sections/_footer.scss */
   footer {
-    flex-basis: 3.4em;
-    font-size: 1.36em;
+    flex-basis: 2.04em;
+    font-size: 1.53em;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   /* line 1, ../scss/sections/_footer.scss */
   footer {
-    flex-basis: 3.57em;
-    font-size: 1.445em;
+    flex-basis: 2.38em;
+    font-size: 1.53em;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1679px) {
   /* line 1, ../scss/sections/_footer.scss */
   footer {
-    flex-basis: 3.74em;
-    font-size: 1.53em;
+    flex-basis: 3.06em;
+    font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1680px) {
   /* line 1, ../scss/sections/_footer.scss */
   footer {
-    flex-basis: 3.825em;
-    font-size: 1.53em;
+    flex-basis: 3.06em;
+    font-size: 1.7em;
   }
 }
 /* line 26, ../scss/sections/_footer.scss */
@@ -3651,6 +3651,12 @@ footer span {
 /* line 29, ../scss/sections/_footer.scss */
 footer span.symbol {
   color: #00acc1;
+}
+@media screen and (max-width: 330px) {
+  /* line 32, ../scss/sections/_footer.scss */
+  footer span.fa, footer main[page-name^="index"] span.scorable:after, main[page-name^="index"] footer span.scorable:after {
+    display: none;
+  }
 }
 
 /* line 8, ../scss/sections/_page.scss */

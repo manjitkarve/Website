@@ -3,31 +3,36 @@ footer{
     @include display(flex);
     @include align-items(center);
     @include justify-content(space-around);
-    @media screen and (max-width: 767px) {
-        flex-basis: $heading-font-size*1.9;
+    @media screen and (max-width: 499px) {
+        flex-basis: $heading-font-size*2.5;
         font-size: $heading-font-size*0.6;
     }
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        flex-basis: $heading-font-size*2;
-        font-size: $heading-font-size*0.8;
+    @media screen and (min-width: 500px) and (max-width: 1023px) {
+        flex-basis: $heading-font-size*1.2;
+        font-size: $heading-font-size*0.9;
     }
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        flex-basis: $heading-font-size*2.1;
-        font-size: $heading-font-size*0.85;
+        flex-basis: $heading-font-size*1.4;
+        font-size: $heading-font-size*0.9;
     }
     @media screen and (min-width: 1280px) and (max-width: 1679px) {
-        flex-basis: $heading-font-size*2.2;
-        font-size: $heading-font-size*0.9;
+        flex-basis: $heading-font-size*1.8;
+        font-size: $heading-font-size*1;
     }
     @media screen and (min-width: 1680px) {
-        flex-basis: $heading-font-size*2.25;
-        font-size: $heading-font-size*0.9;
+        flex-basis: $heading-font-size*1.8;
+        font-size: $heading-font-size*1;
     }
     span{
         margin: 0 0.5em;
         color: base-pal($secondary);
         &.symbol{
             color: base-pal($primary);
+        }
+        &.fa {
+            @media screen and (max-width: 330px) {
+                display: none;
+            }
         }
     }
     background-color: xdark-pal($bgrey);
