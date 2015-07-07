@@ -3518,40 +3518,67 @@ main {
 main[page-name^="index"] .row article p {
   text-align: justify;
 }
-/* line 20, ../scss/sections/index/_index.scss */
+/* line 19, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article p[hide] {
+  display: none;
+}
+/* line 21, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article h2 {
   color: #006064;
   margin-bottom: 0.1em;
 }
-/* line 23, ../scss/sections/index/_index.scss */
+/* line 24, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article h2 .fa, main[page-name^="index"] .row article h2 .scorable:after {
   margin-right: 0.5em;
 }
-/* line 26, ../scss/sections/index/_index.scss */
-main[page-name^="index"] .row article.about ul, main[page-name^="index"] .row article.about li {
-  margin: 0;
+/* line 27, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 1em 0;
   padding: 0;
 }
-/* line 27, ../scss/sections/index/_index.scss */
-main[page-name^="index"] .row article.about li {
-  display: inline-block;
-  margin-right: 0.5em;
-}
 /* line 30, ../scss/sections/index/_index.scss */
-main[page-name^="index"] .row article.about li:after {
+main[page-name^="index"] .row article ul li {
+  margin: 0 0.5em 0 0;
+  padding: 0;
+  color: #e91e63;
+}
+/* line 34, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article ul li:nth-child(2n) {
+  color: #880e4f;
+}
+/* line 37, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article ul li:after {
   content: '|';
   display: inline-block;
   margin-left: 0.7em;
 }
-/* line 35, ../scss/sections/index/_index.scss */
-main[page-name^="index"] .row article.about li:last-child:after {
+/* line 42, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article ul li:last-child:after {
   display: none;
 }
-/* line 45, ../scss/sections/index/_index.scss */
+/* line 49, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article .fa.fa-braces:before {
+  content: '{..}';
+}
+/* line 56, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable {
   position: relative;
 }
-/* line 47, ../scss/sections/index/_index.scss */
+/* line 58, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable:after {
   display: none;
   position: absolute;
@@ -3559,39 +3586,39 @@ main[page-name^="index"] .scorable:after {
   top: -3px;
   left: 0px;
 }
-/* line 55, ../scss/sections/index/_index.scss */
+/* line 66, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable:hover:after, main[page-name^="index"] .scorable.scoreOn:after {
   display: block;
 }
-/* line 58, ../scss/sections/index/_index.scss */
+/* line 69, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="1"] {
   color: #b0120a;
 }
-/* line 60, ../scss/sections/index/_index.scss */
+/* line 71, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="1"]:after {
   content: "\f005\f006\f006\f006";
 }
-/* line 64, ../scss/sections/index/_index.scss */
+/* line 75, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="2"] {
   color: #3f51b5;
 }
-/* line 66, ../scss/sections/index/_index.scss */
+/* line 77, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="2"]:after {
   content: "\f005\f005\f006\f006";
 }
-/* line 70, ../scss/sections/index/_index.scss */
+/* line 81, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="3"] {
   color: #4db6ac;
 }
-/* line 72, ../scss/sections/index/_index.scss */
+/* line 83, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="3"]:after {
   content: "\f005\f005\f005\f006";
 }
-/* line 76, ../scss/sections/index/_index.scss */
+/* line 87, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="4"] {
   color: #259b24;
 }
-/* line 78, ../scss/sections/index/_index.scss */
+/* line 89, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="4"]:after {
   content: "\f005\f005\f005\f005";
 }

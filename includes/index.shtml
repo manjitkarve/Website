@@ -17,21 +17,137 @@
 </article>
 <article class="type-system-rounded design article">
 	<h2><i class="fa fa-magic animate"></i><span>Design</span></h2>
-	<p>I love cracking challenging design problems. My experience with UX design has spanned platforms (desktop, web, mobile), domains (enterprise systems, human capital, finance, productivity) and user sizes (2 through 100s to 1000s). I currently manage the Design and UX team in D.&nbsp;E.&nbsp;Shaw India.</p>
+    <ul>
+        <li>Requirement Gathering</li>
+        <li>Workflow Analysis</li>
+        <li>Storyboarding</li>
+        <li>Wireframes</li>
+        <li>Interaction Design</li>
+        <li>Component Design</li>
+        <li>Usability</li>
+        <li>Web</li>
+        <li>Mobile</li>
+        <li>Heuristic Evaluation</li>
+    </ul>
 </article>
 </div>
 
 <div class="row">
 <article class="type-system-rounded coding article">
-	<h2><i class="fa fa-code animate"></i><span>Coding</span></h2>
-	<p>I like knowing the medium for which I'm designing. It started with <a href="javascript:jQuery.noop();" class="scorable" data-score="3">Java and JFC Swing</a>, and I've learnt to use various languages, preprocessors, libraries and platforms over the years: <a href="javascript:jQuery.noop();" class="scorable" data-score="4">HTML</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="4">CSS</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="4">Javascript</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="1">Perl</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="2">PHP</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="3">SCSS</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="4">jQuery</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="3">SCSS&nbsp;Frameworks</a>, <a href="javascript:jQuery.noop();" class="scorable" data-score="3">Sencha Touch</a> and even <a href="javascript:jQuery.noop();" class="scorable" data-score="1">ncurses</a> at one point. As with design, I love cracking challenging real world coding problems.</p>
+	<h2><i class="fa fa-braces animate"></i><span>Coding</span></h2>
+    <ul>
+        <li>Javascript</li>
+        <li>NodeJS</li>
+        <li>Ruby</li>
+        <li>Golang</li>
+        <li>PHP</li>
+        <li>Perl</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C/C++/C#</li>
+    </ul>
 </article>
-<article class="type-system-rounded management article">
-	<h2><i class="fa fa-users animate"></i><span>Management</span></h2>
-	<p>I have been managing the Design and User Experience team at D.&nbsp;E.&nbsp;Shaw India for the last 6 years. Over this period I've successfully found talented staff and managed its day to day work and project delivery. </p>
+<article class="type-system-rounded authoring article">
+	<h2><i class="fa fa-code animate"></i><span>Authoring and Libraries</span></h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS/SCSS</li>
+        <li>jQuery</li>
+        <li>Sencha Touch</li>
+        <li>AngularJS</li>
+    </ul>
 </article>
 </div>
 
+<div class="row">
+<article class="type-system-rounded tools article">
+	<h2><i class="fa fa-wrench animate"></i><span>Tools</span></h2>
+    <ul>
+        <li>Balsamiq Mockups</li>
+        <li>Brackets</li>
+        <li>Inkscape</li>
+        <li>Gimp</li>
+        <li>HTML/CSS/JS</li>
+    </ul>
+</article>
+<article class="type-system-rounded project-types article">
+	<h2><i class="fa fa-check-square animate"></i><span>Projects</span></h2>
+    <ul>
+        <li>Dashboards</li>
+        <li>Productivity Apps</li>
+        <li>Workflow Management Tools</li>
+        <li>Finance and Accounting Applications</li>
+        <li>Enterprise Systems</li>
+        <li>Human Capital</li>
+        <li>Intranets</li>
+        <li>Websites</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded platforms article">
+	<h2><i class="fa fa-server animate"></i><span>Platforms</span></h2>
+    <ul>
+        <li>Java Web</li>
+        <li>JFC/Swing</li>
+        <li>SharePoint</li>
+        <li>PHP/Perl/MySQL</li>
+    </ul>
+</article>
+<article class="type-system-rounded  management article">
+	<h2><i class="fa fa-users animate"></i><span>Management</span></h2>
+    <ul>
+        <li>Design Evangelization</li>
+        <li>Team Management</li>
+        <li>Project Tracking</li>
+        <li>Recruiting</li>
+        <li>Performance Evaluation</li>
+        <li>Headcount Planning</li>
+        <li>Standards Definition</li>
+        <li>Technology Direction</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded companies article">
+	<h2><i class="fa fa-building animate"></i><span>Companies</span></h2>
+    <ul>
+        <li>D.&nbsp;E.&nbsp;Shaw &mdash; 8.5y</li>
+        <li>Microsoft &mdash; 6m</li>
+        <li>AmberPoint &mdash; 1y</li>
+        <li>Veritas &mdash; 4.5y</li>
+    </ul>
+</article>
+<article class="type-system-rounded  management article">
+	<h2><i class="fa fa-graduation-cap animate"></i><span>Education</span></h2>
+    <ul>
+        <li>Master of Computer Science &mdash; University of Pune</li>
+        <li>Bachelor of Computer Science &mdash; University of Pune</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded acheievements article">
+	<h2><i class="fa fa-trophy animate"></i><span>Achievements</span></h2>
+    <ul>
+        <li>Sub-30s Cube Solve</li>
+        <li>Hyd-Pune-Hyd Solo Motorcycle Ride</li>
+        <li>Extreme Weight Loss</li>
+        <li>Gave Up Smoking</li>
+    </ul>
+</article>
+<article class="type-system-rounded  certification article">
+	<h2><i class="fa fa-star animate"></i><span>Certification</span></h2>
+    <ul>
+        <li>Awesome!</li>
+    </ul>
+</article>
+</div>
+
+<!--
 <div class="row">
 <article class="type-system-rounded fitness article">
 	<h2><i class="fa fa-heartbeat animate"></i><span>Fitness</span></h2>
@@ -43,3 +159,4 @@
 	<p>I'm an enthusiastic SF and Fantasy fan. I get through a lot of books in these genres. Have a look at my <a href="http://www.goodreads.com/review/list/11797400-manjit-karve">bookshelves on Goodreads</a>.</p>
 </article>
 </div>
+-->

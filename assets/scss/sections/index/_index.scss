@@ -16,17 +16,24 @@ main[page-name^="index"] {
             }
             p {
                 text-align: justify;
+                &[hide]{display: none;}
             }
             h2 {
                 color: xdark-pal($primary);
                 margin-bottom: 0.1em;
                 .fa {margin-right: 0.5em;}
             }
-            &.about{
-                ul, li{margin: 0; padding: 0}
+
+            ul{
+                @include display(flex);
+                @include flex-wrap(wrap);
                 li{
-                    display: inline-block;
-                    margin-right: 0.5em;
+                    margin: 0 0.5em 0 0;
+                    padding: 0;
+                    color: base-pal($secondary);
+                    &:nth-child(2n){
+                        color: xdark-pal($secondary);
+                    }
                     &:after{
                           content: '|';
                           display: inline-block;
@@ -36,9 +43,13 @@ main[page-name^="index"] {
                         display: none;
                     }
                 }
+                margin: 0 0 1em 0;
+                padding: 0;
+            }
+            .fa.fa-braces:before{
+                content: '{..}';
             }
         }
-
 
     }
 
