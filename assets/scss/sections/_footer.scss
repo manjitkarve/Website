@@ -37,4 +37,6 @@ footer{
         }
     }
     background-color: xdark-pal($bgrey);
+    box-shadow: 0px -4px 2px 0px transparentize(xdark-pal($grey2), 0.3);
+    z-index: 10;
 }

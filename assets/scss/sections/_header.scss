@@ -4,7 +4,8 @@
 header{
     background-color: $header-bg;
     padding: 0 1em;
-    box-shadow: 0px 0px 2px 4px dark-pal($grey2);
+    box-shadow: 0px 0px 2px 4px transparentize(xdark-pal($grey2), 0.3);
+    z-index: 10;
     @include flex-grow(0);
 
     @include display(flex);
@@ -61,6 +62,7 @@ header{
                 color: base-pal($primary);
                 text-shadow: transparentize(dark-pal($grey2), 0.3) 0.05em 0.05em;
                 margin-right: 0.75rem;
+                margin-top: -0.07em;
                 @media screen and (max-width: 767px) {
                     font-size: $heading-font-size*$base-factor;
                 }
