@@ -20,6 +20,7 @@ main{
     padding: 1em;
     background-color: transparentize(xlight-pal($grey1), 0.3);
     position: relative;
+    box-shadow: 4px 2px 2px 0px dark-pal($grey2);
 }
 
 @import "index/index";
