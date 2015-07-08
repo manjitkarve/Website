@@ -1,7 +1,8 @@
 <header class="navigation" role="banner">
     <h1>
-      <a href="/" class="logo">
-        <img src="/assets/images/logo.png" alt="Manjit Karve"><span>Manjit Karve</span>
+      <a href="/" class="branding">
+        <i class="logo"></i>
+        <span class="name">Manjit Karve</span>
       </a>
     </h1>
 

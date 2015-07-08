@@ -3263,7 +3263,32 @@ header nav > ul li:hover > ul {
   display: block;
 }
 
-/* line 3, ../scss/sections/_header.scss */
+@font-face {
+  font-family: 'manjit-logo';
+  src: url("../fonts/manjit-logo.eot?-29ya30");
+  src: url("../fonts/manjit-logo.eot?#iefix-29ya30") format("embedded-opentype"), url("../fonts/manjit-logo.ttf?-29ya30") format("truetype"), url("../fonts/manjit-logo.woff?-29ya30") format("woff"), url("../fonts/manjit-logo.svg?-29ya30#manjit-logo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../scss/sections/_logo.scss */
+i.logo {
+  font-family: 'manjit-logo';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 24, ../scss/sections/_logo.scss */
+i.logo:before {
+  content: "\e600";
+}
+
+/* line 4, ../scss/sections/_header.scss */
 header {
   background-color: #f5f5f5;
   padding: 0 1em;
@@ -3297,13 +3322,17 @@ header {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  flex-shrink: 0;
+  -ms-flex-negative: 0;
 }
-/* line 13, ../scss/sections/_header.scss */
+/* line 15, ../scss/sections/_header.scss */
 header h1 {
   margin: 0;
 }
-/* line 15, ../scss/sections/_header.scss */
-header h1 .logo {
+/* line 17, ../scss/sections/_header.scss */
+header h1 .branding {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -3331,37 +3360,37 @@ header h1 .logo {
   -ms-flex-pack: justify;
 }
 @media screen and (max-width: 767px) {
-  /* line 15, ../scss/sections/_header.scss */
-  header h1 .logo {
+  /* line 17, ../scss/sections/_header.scss */
+  header h1 .branding {
     height: 2.21em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 15, ../scss/sections/_header.scss */
-  header h1 .logo {
+  /* line 17, ../scss/sections/_header.scss */
+  header h1 .branding {
     height: 2.38em;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 15, ../scss/sections/_header.scss */
-  header h1 .logo {
+  /* line 17, ../scss/sections/_header.scss */
+  header h1 .branding {
     height: 2.38em;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1679px) {
-  /* line 15, ../scss/sections/_header.scss */
-  header h1 .logo {
+  /* line 17, ../scss/sections/_header.scss */
+  header h1 .branding {
     height: 2.55em;
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 15, ../scss/sections/_header.scss */
-  header h1 .logo {
+  /* line 17, ../scss/sections/_header.scss */
+  header h1 .branding {
     height: 2.55em;
   }
 }
-/* line 34, ../scss/sections/_header.scss */
-header h1 .logo span {
+/* line 36, ../scss/sections/_header.scss */
+header h1 .branding span {
   font-family: "Alegreya Sans SC";
   font-weight: 900;
   font-size: 1.7em;
@@ -3369,72 +3398,69 @@ header h1 .logo span {
   text-shadow: #00838f 2px 2px;
 }
 @media screen and (max-width: 767px) {
-  /* line 34, ../scss/sections/_header.scss */
-  header h1 .logo span {
+  /* line 36, ../scss/sections/_header.scss */
+  header h1 .branding span {
     font-size: 1.36em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 34, ../scss/sections/_header.scss */
-  header h1 .logo span {
+  /* line 36, ../scss/sections/_header.scss */
+  header h1 .branding span {
     font-size: 1.53em;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 34, ../scss/sections/_header.scss */
-  header h1 .logo span {
+  /* line 36, ../scss/sections/_header.scss */
+  header h1 .branding span {
     font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1679px) {
-  /* line 34, ../scss/sections/_header.scss */
-  header h1 .logo span {
+  /* line 36, ../scss/sections/_header.scss */
+  header h1 .branding span {
     font-size: 1.87em;
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 34, ../scss/sections/_header.scss */
-  header h1 .logo span {
+  /* line 36, ../scss/sections/_header.scss */
+  header h1 .branding span {
     font-size: 2.04em;
   }
 }
-/* line 56, ../scss/sections/_header.scss */
-header h1 .logo img {
-  vertical-align: top;
+/* line 59, ../scss/sections/_header.scss */
+header h1 .branding i.logo {
+  color: #00acc1;
+  text-shadow: rgba(66, 66, 66, 0.7) 0.05em 0.05em;
   margin-right: 0.75rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 56, ../scss/sections/_header.scss */
-  header h1 .logo img {
-    display: none;
+  /* line 59, ../scss/sections/_header.scss */
+  header h1 .branding i.logo {
+    font-size: 1.19em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 56, ../scss/sections/_header.scss */
-  header h1 .logo img {
-    width: 1.7em;
-    padding-top: 0.2em;
+  /* line 59, ../scss/sections/_header.scss */
+  header h1 .branding i.logo {
+    font-size: 1.36em;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* line 56, ../scss/sections/_header.scss */
-  header h1 .logo img {
-    width: 1.7em;
-    padding-top: 0.2em;
+  /* line 59, ../scss/sections/_header.scss */
+  header h1 .branding i.logo {
+    font-size: 1.53em;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1679px) {
-  /* line 56, ../scss/sections/_header.scss */
-  header h1 .logo img {
-    width: 1.7em;
-    padding-top: 0.2em;
+  /* line 59, ../scss/sections/_header.scss */
+  header h1 .branding i.logo {
+    font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 56, ../scss/sections/_header.scss */
-  header h1 .logo img {
-    width: 1.7em;
-    padding-top: 0.2em;
+  /* line 59, ../scss/sections/_header.scss */
+  header h1 .branding i.logo {
+    font-size: 1.87em;
   }
 }
 
@@ -3508,30 +3534,67 @@ main {
     -ms-flex-pack: justify;
   }
 }
+@media screen and (min-width: 1024px) {
+  /* line 10, ../scss/sections/index/_index.scss */
+  main[page-name^="index"] .row article.coding {
+    margin-left: 5em;
+  }
+  /* line 11, ../scss/sections/index/_index.scss */
+  main[page-name^="index"] .row article.companies {
+    margin-left: 10em;
+  }
+}
 @media screen and (min-width: 768px) {
-  /* line 12, ../scss/sections/index/_index.scss */
+  /* line 15, ../scss/sections/index/_index.scss */
   main[page-name^="index"] .row article:last-child {
     margin-left: 2em;
   }
 }
-/* line 17, ../scss/sections/index/_index.scss */
+/* line 21, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article p {
   text-align: justify;
 }
-/* line 19, ../scss/sections/index/_index.scss */
+/* line 23, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article p[hide] {
   display: none;
 }
-/* line 21, ../scss/sections/index/_index.scss */
+/* line 25, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article h2 {
-  color: #006064;
+  color: #00838f;
   margin-bottom: 0.1em;
 }
-/* line 24, ../scss/sections/index/_index.scss */
+/* line 28, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article h2 .fa, main[page-name^="index"] .row article h2 .scorable:after {
   margin-right: 0.5em;
+  padding: 0.35em 0.3em 0.2em 0.25em;
+  background-color: #00838f;
+  color: white;
+  line-height: 1em;
+  height: 1.7em;
+  width: 1.7em;
+  text-align: center;
+  border: 1px solid #00838f;
+  border-radius: 0.85em;
+  box-shadow: inset rgba(66, 66, 66, 0.5) 0.05em 0.05em 0 0;
+  text-shadow: rgba(66, 66, 66, 0.5) 0.1em 0.1em;
 }
-/* line 27, ../scss/sections/index/_index.scss */
+/* line 42, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article h2 .fa-graduation-cap {
+  padding: 0.35em 0.35em 0.2em 0.2em;
+}
+/* line 43, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article h2 .fa-user {
+  padding: 0.25em 0.3em 0.3em 0.25em;
+}
+/* line 44, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article h2 .fa-building {
+  padding: 0.35em 0.25em 0.2em 0.3em;
+}
+/* line 45, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article h2 .fa-wrench, main[page-name^="index"] .row article h2 .fa-braces, main[page-name^="index"] .row article h2 .fa-code {
+  padding: 0.3em 0.3em 0.25em 0.25em;
+}
+/* line 49, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article ul {
   display: -webkit-box;
   display: -moz-box;
@@ -3550,35 +3613,44 @@ main[page-name^="index"] .row article ul {
   margin: 0 0 1em 0;
   padding: 0;
 }
-/* line 30, ../scss/sections/index/_index.scss */
+/* line 52, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article ul li {
   margin: 0 0.5em 0 0;
   padding: 0;
+  font-size: 1.1em;
   color: #e91e63;
 }
-/* line 34, ../scss/sections/index/_index.scss */
+/* line 57, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article ul li:nth-child(2n) {
   color: #880e4f;
 }
-/* line 37, ../scss/sections/index/_index.scss */
+/* line 60, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article ul li[data-grade-normal] {
+  font-size: 1em;
+}
+/* line 61, ../scss/sections/index/_index.scss */
+main[page-name^="index"] .row article ul li[data-grade-up] {
+  font-size: 1.3em;
+}
+/* line 62, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article ul li:after {
   content: '|';
   display: inline-block;
   margin-left: 0.7em;
 }
-/* line 42, ../scss/sections/index/_index.scss */
+/* line 67, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article ul li:last-child:after {
   display: none;
 }
-/* line 49, ../scss/sections/index/_index.scss */
+/* line 74, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .row article .fa.fa-braces:before {
-  content: '{..}';
+  content: '{}';
 }
-/* line 56, ../scss/sections/index/_index.scss */
+/* line 81, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable {
   position: relative;
 }
-/* line 58, ../scss/sections/index/_index.scss */
+/* line 83, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable:after {
   display: none;
   position: absolute;
@@ -3586,39 +3658,39 @@ main[page-name^="index"] .scorable:after {
   top: -3px;
   left: 0px;
 }
-/* line 66, ../scss/sections/index/_index.scss */
+/* line 91, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable:hover:after, main[page-name^="index"] .scorable.scoreOn:after {
   display: block;
 }
-/* line 69, ../scss/sections/index/_index.scss */
+/* line 94, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="1"] {
   color: #b0120a;
 }
-/* line 71, ../scss/sections/index/_index.scss */
+/* line 96, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="1"]:after {
   content: "\f005\f006\f006\f006";
 }
-/* line 75, ../scss/sections/index/_index.scss */
+/* line 100, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="2"] {
   color: #3f51b5;
 }
-/* line 77, ../scss/sections/index/_index.scss */
+/* line 102, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="2"]:after {
   content: "\f005\f005\f006\f006";
 }
-/* line 81, ../scss/sections/index/_index.scss */
+/* line 106, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="3"] {
   color: #4db6ac;
 }
-/* line 83, ../scss/sections/index/_index.scss */
+/* line 108, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="3"]:after {
   content: "\f005\f005\f005\f006";
 }
-/* line 87, ../scss/sections/index/_index.scss */
+/* line 112, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="4"] {
   color: #259b24;
 }
-/* line 89, ../scss/sections/index/_index.scss */
+/* line 114, ../scss/sections/index/_index.scss */
 main[page-name^="index"] .scorable[data-score="4"]:after {
   content: "\f005\f005\f005\f005";
 }
@@ -3654,6 +3726,10 @@ footer {
   -o-justify-content: space-around;
   justify-content: space-around;
   -ms-flex-pack: distribute;
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  flex-shrink: 0;
+  -ms-flex-negative: 0;
   background-color: #263238;
 }
 @media screen and (max-width: 499px) {
@@ -3691,17 +3767,17 @@ footer {
     font-size: 1.7em;
   }
 }
-/* line 26, ../scss/sections/_footer.scss */
+/* line 27, ../scss/sections/_footer.scss */
 footer span {
   margin: 0 0.5em;
   color: #e91e63;
 }
-/* line 29, ../scss/sections/_footer.scss */
+/* line 30, ../scss/sections/_footer.scss */
 footer span.symbol {
   color: #00acc1;
 }
 @media screen and (max-width: 330px) {
-  /* line 32, ../scss/sections/_footer.scss */
+  /* line 33, ../scss/sections/_footer.scss */
   footer span.fa, footer main[page-name^="index"] span.scorable:after, main[page-name^="index"] footer span.scorable:after {
     display: none;
   }

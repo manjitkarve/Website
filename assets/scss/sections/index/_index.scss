@@ -4,9 +4,12 @@ main[page-name^="index"] {
             @include display(flex);
             @include flex-direction(row);
             @include justify-content(space-between);
+
         }
-
-
+        @media screen and (min-width: 1024px) {
+            article.coding{margin-left: 5em;}
+            article.companies{margin-left: 10em;}
+        }
 
         article{
             &:last-child{
@@ -14,14 +17,33 @@ main[page-name^="index"] {
                     margin-left: 2em;
                 }
             }
+
             p {
                 text-align: justify;
                 &[hide]{display: none;}
             }
             h2 {
-                color: xdark-pal($primary);
+                color: dark-pal($primary);
                 margin-bottom: 0.1em;
-                .fa {margin-right: 0.5em;}
+                .fa {
+                    margin-right: 0.5em;
+                    padding: 0.35em 0.3em 0.2em 0.25em;
+                    background-color: dark-pal($primary);
+                    color: white;
+                    line-height: 1em;
+                    height: 1.7em;
+                    width: 1.7em;
+                    text-align: center;
+                    border: 1px solid dark-pal($primary);
+                    border-radius: 0.85em;
+                    box-shadow: inset transparentize(dark-pal($grey2), 0.5) 0.05em 0.05em 0 0;
+                    text-shadow: transparentize(dark-pal($grey2), 0.5) 0.1em 0.1em;
+                }
+                .fa-graduation-cap{padding: 0.35em 0.35em 0.2em 0.2em;}
+                .fa-user{padding: 0.25em 0.3em 0.3em 0.25em;}
+                .fa-building{padding: 0.35em 0.25em 0.2em 0.3em;}
+                .fa-wrench, .fa-braces, .fa-code{padding: 0.3em 0.3em 0.25em 0.25em;}
+
             }
 
             ul{
@@ -30,10 +52,13 @@ main[page-name^="index"] {
                 li{
                     margin: 0 0.5em 0 0;
                     padding: 0;
+                    font-size: 1.1em;
                     color: base-pal($secondary);
                     &:nth-child(2n){
                         color: xdark-pal($secondary);
                     }
+                    &[data-grade-normal]{font-size: 1em;}
+                    &[data-grade-up]{font-size: 1.3em;}
                     &:after{
                           content: '|';
                           display: inline-block;
@@ -47,7 +72,7 @@ main[page-name^="index"] {
                 padding: 0;
             }
             .fa.fa-braces:before{
-                content: '{..}';
+                content: '{}';
             }
         }
 

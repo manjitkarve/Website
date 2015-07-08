@@ -1,4 +1,5 @@
 @import "navigation";
+@import "logo";
 
 header{
     background-color: $header-bg;
@@ -9,10 +10,11 @@ header{
     @include display(flex);
     @include align-items(center);
     @include justify-content(space-between);
+    @include flex-shrink(0);
 
     h1{
         margin: 0;
-        .logo{
+        .branding{
             @include display(flex);
             @include align-items(center);
             @include justify-content(space-between);
@@ -53,28 +55,26 @@ header{
                     font-size: $heading-font-size*1.2;
                 }
             }
-            img{
-                vertical-align: top;
 
+            i.logo{
+                $base-factor: 0.7;
+                color: base-pal($primary);
+                text-shadow: transparentize(dark-pal($grey2), 0.3) 0.05em 0.05em;
                 margin-right: 0.75rem;
                 @media screen and (max-width: 767px) {
-                    display: none;
+                    font-size: $heading-font-size*$base-factor;
                 }
                 @media screen and (min-width: 768px) and (max-width: 1023px) {
-                    width: $heading-font-size*1;
-                    padding-top: 0.2em;
+                    font-size: $heading-font-size*($base-factor+0.1);
                 }
                 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-                    width: $heading-font-size*1;
-                    padding-top: 0.2em;
+                    font-size: $heading-font-size*($base-factor+0.2);
                 }
                 @media screen and (min-width: 1280px) and (max-width: 1679px) {
-                    width: $heading-font-size*1;
-                    padding-top: 0.2em;
+                    font-size: $heading-font-size*($base-factor+0.3);
                 }
                 @media screen and (min-width: 1680px) {
-                    width: $heading-font-size*1;
-                    padding-top: 0.2em;
+                    font-size: $heading-font-size*($base-factor+0.4);
                 }
             }
         }
