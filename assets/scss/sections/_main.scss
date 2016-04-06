@@ -1,5 +1,5 @@
 main{
-    @include flex-grow(1);
+    flex-grow: 1;
     box-sizing: border-box;
     max-width: 100%;
     @media screen and (max-width: $base-content-width - 1) {

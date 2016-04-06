@@ -14,8 +14,7 @@ html, body, #pageContainer {
 }
 
 #pageContainer{
-    @include display(flex);
-    @include flex-direction(column);
-    @include radial-gradient(circle at 30% 30%, light-pal($grey2), dark-pal($bgrey));
+    display: flex;
+    flex-direction: column;
     position: relative;
 }

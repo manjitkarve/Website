@@ -6,19 +6,18 @@ header{
     padding: 0 1em;
     box-shadow: 0px 0px 2px 4px transparentize(xdark-pal($grey2), 0.3);
     z-index: 10;
-    @include flex-grow(0);
-
-    @include display(flex);
-    @include align-items(center);
-    @include justify-content(space-between);
-    @include flex-shrink(0);
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     h1{
         margin: 0;
         .branding{
-            @include display(flex);
-            @include align-items(center);
-            @include justify-content(space-between);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             @media screen and (max-width: 767px) {
                 height: $heading-font-size*1.3;
             }
