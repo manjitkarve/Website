@@ -6,21 +6,20 @@ main[page-name^="index"] {
             @include justify-content(space-between);
 
         }
-        @media screen and (min-width: 1024px) {
+        /*@media screen and (min-width: 1024px) {
             article.coding{margin-left: 5em;}
             article.companies{margin-left: 10em;}
-        }
+        }*/
 
         article{
+            @include flex-shrink(1);
+            @include flex-grow(1);
+            width: 1px;//fix for IE11 flex bounds issue
+            //@include display(flex);
             &:last-child{
                 @media screen and (min-width: 768px) {
                     margin-left: 2em;
                 }
-            }
-
-            p {
-                text-align: justify;
-                &[hide]{display: none;}
             }
             h2 {
                 color: dark-pal($primary);

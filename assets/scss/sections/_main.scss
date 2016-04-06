@@ -1,5 +1,7 @@
 main{
     @include flex-grow(1);
+    box-sizing: border-box;
+    max-width: 100%;
     @media screen and (max-width: $base-content-width - 1) {
         width: 100%;
     }
@@ -20,7 +22,7 @@ main{
     padding: 1em;
     background-color: transparentize(xlight-pal($grey1), 0.3);
     position: relative;
-    box-shadow: 4px 2px 2px 0px dark-pal($grey2);
+    box-shadow: 0px 0px 4px 1px dark-pal($grey2);
 }
 
 @import "index/index";
